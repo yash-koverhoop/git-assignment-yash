@@ -4,6 +4,10 @@ class User {
     this.lastName = data.lastName;
   }
 
+  getFullName() {
+    return this.firstName + " " + this.lastName;
+  }
+
   sayHello() {
     console.log("Hello from", this.firstName, this.lastName);
   }
